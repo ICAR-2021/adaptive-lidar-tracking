@@ -122,6 +122,7 @@ catkin_package(
 include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
+  "/usr/include/opencv4"
 )
 
 ## Declare a C++ library
