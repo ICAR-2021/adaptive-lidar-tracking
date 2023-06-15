@@ -18,6 +18,19 @@ TO DO
 
 TO DO
 
+### Compiling on Ubuntu 20.04, ROS Noetic, and OpenCV 4.2.0
+
+```
+sudo apt update
+sudo apt install libopencv-dev
+cd ~/catkin_ws/src
+git clone https://github.com/ICAR-2021/adaptive-lidar-tracking.git
+cd ~/catkin_ws
+source /opt/ros/noetic/setup.bash
+rosdep install --from-paths src --ignore-src -r -y
+catkin_make
+```
+
 ## Run it
 
 ### Tello Motion Start
