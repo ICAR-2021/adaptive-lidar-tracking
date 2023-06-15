@@ -31,6 +31,17 @@ rosdep install --from-paths src --ignore-src -r -y
 catkin_make
 ```
 
+### Docker
+Build:
+```
+docker build -t adaptive-lidar-tracking .
+```
+
+Execute:
+```
+docker run --rm -it adaptive-lidar-tracking
+```
+
 ## Run it
 
 ### Tello Motion Start
